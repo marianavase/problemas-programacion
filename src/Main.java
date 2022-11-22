@@ -1,47 +1,41 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int filas = scanner.nextInt();
-        int columnas = scanner.nextInt();
-        int[][] tablero = new int[filas ][columnas];
-        for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                tablero[i][j] = scanner.nextInt();
+
+
+        int npregunta = scanner.nextInt();
+        int[] valorPregunta = new int[npregunta];
+
+        for (int i = 0; i <npregunta ; i++) {
+            valorPregunta[i] = scanner.nextInt();
+        }
+
+        int nalumnos = scanner.nextInt();
+        int[][] notaAlu = new int[nalumnos][npregunta];
+        for (int i = 0; i <nalumnos ; i++) {
+            for (int j = 0; j < npregunta; j++) {
+                notaAlu[i][j] = scanner.nextInt();
+
             }
         }
-        for (int i = 0; i <filas ; i++) {
-            for (int j = 0; j < columnas; j++) {
-                int contadorMinas = 0;
-                if(i-1 >=0 && tablero[i-1][j] == 1){
-                    contadorMinas++;
 
-                }
-                if(j-1 >=0 && tablero[i][j-1] == 1){
-                    contadorMinas++;
-                }
-                if(i-1 >=0 && j-1>=0 && tablero[i-1][j-1] == 1){
-                    contadorMinas++;
-                }
-                if(j-1>=0 && tablero[i][j-1] == 1){
-                    contadorMinas++;
-                }
-                if(j+1<columnas && tablero[i][j+1] == 1){
-                    contadorMinas++;
-                }
-                if(i+1<filas && tablero[i+1][j] == 1){
-                    contadorMinas++;
-                }
-                if(i+1<filas && j+1<columnas && tablero[i+1][j+1] == 1){
-                    contadorMinas++;
-                }
-                System.out.print(contadorMinas + " ");
-
+        int[] ntotal = new int[nalumnos];
+        for (int i = 0; i < nalumnos; i++) {
+            int total= 0;
+            for (int j = 0; j < npregunta; j++) {
+                total = total + notaAlu[i][j]/valorPregunta[i];
             }
-            System.out.println();
-
+            ntotal[i] = total;
         }
+
+        for (int i = 0; i < nalumnos; i++) {
+            System.out.println(ntotal[i]);
+        }
+
 
 
 
@@ -53,14 +47,11 @@ public class Main {
 }
 
 /*
-4 3
-0 1 1
-0 0 0
-1 0 0
-0 1 0
 
-1 1 1
-2 3 2
-1 2 1
-2 1 1
+5
+4 5 3 4 5
+2
+1 2 1 1 1
+3 1 3 3 3
+
  */
