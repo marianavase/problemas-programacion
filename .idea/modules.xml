@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Gatitos/Gatitos.iml" filepath="$PROJECT_DIR$/Gatitos/Gatitos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kahoot.iml" filepath="$PROJECT_DIR$/Kahoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Memory/Memory.iml" filepath="$PROJECT_DIR$/Memory/Memory.iml" />
       <module fileurl="file://$PROJECT_DIR$/Reformas/Reformas.iml" filepath="$PROJECT_DIR$/Reformas/Reformas.iml" />
     </modules>
   </component>
