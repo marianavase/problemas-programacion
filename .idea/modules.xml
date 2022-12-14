@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/Kahoot.iml" filepath="$PROJECT_DIR$/Kahoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/Memory/Memory.iml" filepath="$PROJECT_DIR$/Memory/Memory.iml" />
       <module fileurl="file://$PROJECT_DIR$/Reformas/Reformas.iml" filepath="$PROJECT_DIR$/Reformas/Reformas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bussiness-friendly/bussiness-friendly.iml" filepath="$PROJECT_DIR$/bussiness-friendly/bussiness-friendly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejercicio1examen/ejercicio1examen.iml" filepath="$PROJECT_DIR$/ejercicio1examen/ejercicio1examen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exaamen/exaamen.iml" filepath="$PROJECT_DIR$/exaamen/exaamen.iml" />
     </modules>
   </component>
 </project>
